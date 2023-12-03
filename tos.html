@@ -197,6 +197,83 @@ table td.icon.whale{
 table td.icon.crab{
   background-image: url(icon-crab.png)
 }
+
+/***　おしゃれテーブル4 マゼンダカラー　***/
+.osare4-table {
+ width:100%;
+ border-collapse: separate; 
+ border: none;
+ border-spacing: 0px 10px ;
+}
+
+.osare4-table tbody td, 
+.osare4-table tfoot td {
+ text-align: center;
+}
+
+/* 上部ヘッダー（背景：パステルカラー） */
+.osare4-table thead th {
+ color: #FFF; 
+ font-weight: bold;
+ background:#E91E63;
+}
+
+/* 上部ヘッダーの丸み */
+.osare4-table thead th:nth-child(2) {
+ border-radius: 10px 0 0 0;
+}
+.osare4-table thead th:last-child  {
+ border-radius: 0 10px  0 0;
+}
+
+.osare4-table th,
+.osare4-table td {
+ border: 0 none !important;
+}
+
+/* １行ずつ色変更　不要なら削除 even:奇数行　odd:偶数行 */
+.osare4-table tr:nth-child(even) td { 
+ background: #fff9fc; 
+} 
+.osare4-table tr:nth-child(odd) td {
+ background: #fff9ff; 
+}
+
+/* ヘッダーセル先頭・ボディ項目・フッター項目 */
+.osare4-table tbody th,
+.osare4-table tfoot th,
+.osare4-table thead th:first-child {
+ background:none;
+ color:#666;
+ font-weight: bold;
+ line-height:4.5em;
+ text-align:right;
+}
+
+
+/*（共通）　項目の多いテーブルの幅を調整*/
+@media (max-width: 767px) {
+ .col6t th,
+ .col6t td{
+ font-size:0.4em;
+ padding: 10px 0px;
+ }
+ .col5t th,
+ .col5t td{
+ font-size:0.5em;
+ padding: 10px 0px;
+ }
+ .col4t th,
+ .col4t td{
+ font-size:0.7em;
+ padding: 10px 5px;
+ }
+ .col3t th,
+ .col3t td{
+ font-size:0.8em;
+ padding: 10px 10px;
+ }
+}
 	</style>
 
 	<div id="content" class="cryout">
@@ -228,7 +305,7 @@ table td.icon.crab{
 	5.運営について<br>
 	市ヶ谷サーバーにつきましては、<a href="https://ignitejp.com">幣組織(IGniteJapan)、</a>i=Ziee(本部:千葉県千葉市美浜区)が運営するものとします。<br><br>・なお、幣組織が提供する<a href="https://www.minecraft.net/ja-jp">Minecraft</a>向けサーバーは以下の管理の通りとします。</h6><br>
 	<br>
-	<table>
+	<table class="osare4-table col4t">
 		<tr>
 		  <th>サーバー名</th>
 		  <th>管理担当者</th>
